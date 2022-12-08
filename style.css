@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'poppins' ,sans-serif;
 }
 
 body{
@@ -32,5 +33,99 @@ body{
 .navbar nav ul li a{
     font-size: 19px;
     color: #fff;
+    cursor: pointer;   
+}
+
+.navbar nav ul li a:hover{
+    color: orange;
+    transition: .5s;   
+}
+
+.navbar .extra{
+    line-height: 60px;
+}
+
+.navbar .extra .search-box{
+    background-color: #fff;
+    width: 100%;
+    padding: 8px;
+    border-radius: 28px;
+}
+
+.navbar .extra .search-box input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.navbar .extra .search-box .bx{
+     font-size: 18px;
+     cursor: pointer;
+}
+
+.navbar .extra .cart{
+    color: #fff;
+    font-size: 23px;
+    margin-left: 120px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.navbar .menu-icon{
+    color: #fff;
+    font-size: 35px;
+    margin-right: 10px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*-------------- Media query for media Screen ---------------*/
+@media (max-width: 951px){
     
+    .navbar nav ul li{
+        margin-right: 20px;
+    }
+
+    .navbar nav ul li a{
+        font-size: 16px;
+    }
+
+    .navbar .extra .cart{
+        margin-left: 40px;
+    }
+
+}
+
+/*------------- Media query for mobile screen below 756pz-------------*/
+@media (max-width: 751px){
+    
+    .navbar .logo{
+        margin-left: 0px;
+    }
+
+    .navbar nav ul{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1a1100;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .navbar nav ul li{
+        display: block;
+        padding: 25px;
+    }
+
+    .navbar .extra .cart{
+        margin-left: 20px;
+    }
+
+    .navbar .menu-icon{
+       display: block; 
+    }
+
 }
